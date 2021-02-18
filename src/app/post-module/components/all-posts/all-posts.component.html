@@ -1,0 +1,11 @@
+<p>all-posts works!</p>
+
+
+<router-outlet></router-outlet>
+
+<div *ngFor="let post of posts">
+{{post.id}} - {{post.title}}
+  <div>
+    <a [routerLink]="[post.id]">show MOREEEE</a>
+  </div>
+</div>
